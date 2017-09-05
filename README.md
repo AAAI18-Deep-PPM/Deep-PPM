@@ -43,6 +43,6 @@ The code that implements our proposed model is implemented for the above dataset
 ### Usage
 ```bash
 git clone https://github.com/AAAI18-Deep-PPM/Deep-PPM
-cd poi-prediction
+cd Deep-PPM
 python train.py
 ```
