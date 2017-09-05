@@ -20,7 +20,7 @@ We want the user feature to capture a user’s POI preferences. We associate eac
 ## Data set
 Data set is available at [here](https://s3.amazonaws.com/poiprediction/instagram.tar.gz). The data set includes "train.txt", "validation.txt", "test.txt", and "visual_feature.npz". The "train.txt"  "validation.txt" "test.txt" files include the training, validation, and tesing data respectively. The data is represented in the following format:
 ```bash
-<post_id>\t<user_id>\t<word_1 word_2 ... >\t<poi_id>
+<post_id>\t<user_id>\t<word_1 word_2 ... >\t<poi_id>\t<month>\t<weekday>\t<hour>
 ```
 
 All post_id, user_id, word_id, and poi_id are anonymized. Photo information also cannot be distributed due to personal privacy problems. So we relase the converted visual features from the output of the FC-7 layer of [VGGNet](https://arxiv.org/pdf/1409.1556.pdf) used as the visual feature extractor. If you want to use other visual feature extractor, such as [GoogleNet](http://arxiv.org/abs/1602.07261), [ResNet](https://arxiv.org/abs/1512.03385), you could implement it on your source code. We use a pre-trained VGGNet16 by [https://github.com/machrisaa/tensorflow-vgg](https://github.com/machrisaa/tensorflow-vgg) The "visual_feature.npz" file contains the visual features where the i-th row denotes i-th post's features.
