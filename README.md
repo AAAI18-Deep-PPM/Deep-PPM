@@ -1,4 +1,4 @@
-# Deep-PPM: Deep Neural Framework for <b>P</b>redicting Point-of-Interest on Instagram Data
+# Deep-PPM: A Deep Neural Framework for Predicting Point-of-Interest on Instagram Data
 This page introduces our point-of-interest prediction framework. Our proposed model predcits <b>point-of-interest(POI)</b> on Instagram post utilizing user, text, and photo information in the post. Our proposed model embeds user information in dense user feature vectors and encodes text and photo information in textual and visual feature vectors, respectively, using the convolutional neural network. Not only does our proposed model not require the high-cost pre-processing stage, but it can also be learned on the much larger amount of datasets. 
 
 ## Model description
