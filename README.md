@@ -1,5 +1,15 @@
 # Deep-PPM: A Deep Neural Framework for Predicting Point-of-Interest on Instagram Data
-This page introduces our point-of-interest prediction framework. Our proposed model predcits <b>point-of-interest(POI)</b> on Instagram post utilizing user, text, and photo information in the post. Our proposed model embeds user information in dense user feature vectors and encodes text and photo information in textual and visual feature vectors, respectively, using the convolutional neural network. Not only does our proposed model not require the high-cost pre-processing stage, but it can also be learned on the much larger amount of datasets. 
+A point-of-interest (POI) is a specific location in which someone is interested. 
+Users on Instagram, a mobile-based social network, share their experiences with text and photos, and link POIs to their posts.
+POIs can be utilized to understand user preferences and behavior. 
+However, POI information is not annotated in more than half of the total generated data. 
+Therefore, it is necessary to automatically associate a post on Instagram with a POI.
+In a previous study, a POI prediction model was trained on the POI-annotated Instagram data which includes user, text, and photo information.
+However, this model has some limitations such as difficulty in handling a large amount of data and the high cost of feature engineering.
+In addition, this model does not utilize posting time information which provides each POI's temporal characteristics.
+In this paper, we propose a novel deep learning based time-aware POI prediction model that processes a large amount of data without feature engineering.
+Our proposed model utilizes text, photo, user, and time information to predict correct POIs.
+The experimental results show that our model significantly outperforms the existing state-of-the-art model.
 
 ## Model description
 <p align="center">
